@@ -1,0 +1,13 @@
+functions:
+  gql:
+    name: template-${sls:stage}-${self:service}
+    handler: gql.handler
+    timeout: 30
+    provisionedConcurrency: 1
+    memorySize: 5000 # Overwrite the default memory size. Default is 1024..
+    reservedConcurrency: 200
+    events:
+      - http:
+          path: /gql
+          method: POST
+          private: true

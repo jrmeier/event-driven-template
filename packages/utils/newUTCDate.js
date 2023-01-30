@@ -1,0 +1,1 @@
+export const newUTCDate = (date = new Date()) => new Date(date.toUTCString())

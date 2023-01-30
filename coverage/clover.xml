@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1671735130504" clover="3.2.0">
+  <project timestamp="1671735130505" name="All files">
+    <metrics statements="70" coveredstatements="58" conditionals="22" coveredconditionals="12" methods="20" coveredmethods="12" elements="112" coveredelements="82" complexity="0" loc="70" ncloc="70" packages="7" files="13" classes="13"/>
+    <package name="create-lambda-handler">
+      <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <file name="configureLambdaContext.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/create-lambda-handler/configureLambdaContext.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="returnHandler.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/create-lambda-handler/returnHandler.js">
+        <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="db">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="graphSchemaBuilders.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/db/graphSchemaBuilders.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="models.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/db/models.js">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="db.schemas">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/db/schemas/index.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="db.schemas.User">
+      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="UserGraphSchema.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/db/schemas/User/UserGraphSchema.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+      <file name="UserSchema.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/db/schemas/User/UserSchema.js">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="nerve.js-utils">
+      <metrics statements="23" coveredstatements="12" conditionals="9" coveredconditionals="3" methods="9" coveredmethods="3"/>
+      <file name="createEvent.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/nerve/js-utils/createEvent.js">
+        <metrics statements="11" coveredstatements="9" conditionals="7" coveredconditionals="3" methods="4" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="cond" truecount="0" falsecount="2"/>
+        <line num="22" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+      <file name="emit.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/nerve/js-utils/emit.js">
+        <metrics statements="9" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+      <file name="errorTypes.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/nerve/js-utils/errorTypes.js">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="24" coveredstatements="24" conditionals="7" coveredconditionals="6" methods="3" coveredmethods="3"/>
+      <file name="createEventBridge.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/utils/createEventBridge.js">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="14" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+      </file>
+      <file name="promiseMap.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/utils/promiseMap.js">
+        <metrics statements="19" coveredstatements="19" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="13" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils.passwordBoss">
+      <metrics statements="1" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="generateResetToken.js" path="/Users/jedmeier/Projects/template-lambda-service/packages/utils/passwordBoss/generateResetToken.js">
+        <metrics statements="1" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

@@ -1,0 +1,3 @@
+name: template-lambda-service
+runtime: nodejs
+description: Serverless infra for template-lambda-service

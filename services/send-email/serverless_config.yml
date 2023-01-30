@@ -1,0 +1,12 @@
+functions:
+  sendEmail:
+    name: template-lambda-${sls:stage}-${self:service}
+    handler: sendEmail.handler
+    timeout: 30
+    provisionedConcurrency: 1
+    reservedConcurrency: 1
+    events:
+      - http:
+          path: /send-email
+          method: POST
+          private: true

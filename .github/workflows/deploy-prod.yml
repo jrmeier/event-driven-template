@@ -1,0 +1,24 @@
+name: Deploy Prod
+
+on:
+  workflow_dispatch:
+    inputs:
+      new_resources:
+        type: boolean
+        description: 'Should Pulumi create new resources?'
+        default: false
+        required: true
+jobs:
+  deploy-prod:
+    name: 'Deploy Prod'
+    uses: ./.github/workflows/deploy-env.yml
+    with:
+      deploy_env: prod
+      aws_account_id: '919905793798'
+      domain_name: ac-service-prod.denim-social.com
+      event_bus_name: socialite-prod-social-network
+      new_resources: ${{ github.event.inputs.new_resources == true }}
+      secrets_manager_key: denimsocial-ac-service-prod
+      aws_region: us-east-1
+      deployment_role_arn: arn:aws:iam::919905793798:role/serverless_deployment
+    secrets: inherit

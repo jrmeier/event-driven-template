@@ -1,0 +1,10 @@
+{
+    "name": "openai-sdk",
+    "version": "1.0.0",
+    "description": "OpenAI SDK",
+    "main": "index.js",
+    "author": "Michael W. Clark",
+    "license": "MIT",
+    "private": true
+  }
+  

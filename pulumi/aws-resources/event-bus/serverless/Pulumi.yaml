@@ -1,0 +1,3 @@
+name: template-lamba-service
+runtime: nodejs
+description: Serverless infra for template-service

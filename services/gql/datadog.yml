@@ -1,0 +1,5 @@
+logs_config:
+  processing_rules:
+    - type: exclude_at_match
+      name: exclude_start_and_end_logs
+      pattern: (START|END) RequestId

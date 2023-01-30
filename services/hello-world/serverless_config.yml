@@ -1,0 +1,18 @@
+functions:
+  helloWorld:
+    name: template-lambda-service-${sls:stage}-${self:service}
+    handler: helloWorld.handler
+    # lambdaInsights: true
+    timeout: 30
+    disableLogs: true
+    reservedConcurrency: 20
+    events:
+      - http:
+          path: /hello-world
+          method: GET
+          private: false
+      - eventBridge:
+          eventBus: ${param:EVENT_BUS_ARN}
+          pattern:
+            detail-type:
+              - HELLO_WORLD

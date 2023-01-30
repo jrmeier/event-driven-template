@@ -1,0 +1,10 @@
+{
+  "name": "nerve",
+  "version": "0.0.17",
+  "description": "Nerve is the nevous system of the application. Use it t ",
+  "main": "socialite.js",
+  "author": "Jed Meier",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

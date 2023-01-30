@@ -1,0 +1,98 @@
+{
+  "name": "template-lamba-service",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "STAGE=test jest --coverage",
+    "precommit": "lint-staged",
+    "dev": "sls offline",
+    "dev:full": "sls offline --runScheduler",
+    "dev:server": "yarn start-db && yarn dev",
+    "db:start": "mongod --dbpath ./mongo-data >> /dev/null &",
+    "db:stop": "lsof -i tcp:27017 | awk '{print $2}' | grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox} -v 'PID' | xargs kill",
+    "db:migrations": "npx babel-node migrations"
+  },
+  "prettier": "prettier-config-standard",
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "*": "prettier --ignore-unknown -w",
+    "*.js": "eslint --color --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denimsocial/denimsocial-ac-service.git"
+  },
+  "keywords": [
+    "media",
+    "s3",
+    "lambda",
+    "denimsocial"
+  ],
+  "author": "Jed Meier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denimsocial/denimsocial-ac-service/issues"
+  },
+  "homepage": "https://github.com/denimsocial/denimsocial-ac-service#readme",
+  "workspaces": [
+    "packages/*",
+    "libs/*",
+    "services/*"
+  ],
+  "devDependencies": {
+    "@aws-sdk/client-cloudformation": "3.229.0",
+    "@babel/core": "7.20.5",
+    "@babel/eslint-parser": "7.19.1",
+    "@babel/node": "7.20.5",
+    "@babel/preset-env": "7.20.2",
+    "@faker-js/faker": "7.6.0",
+    "@types/node": "18.11.14",
+    "babel-jest": "29.3.1",
+    "chance": "1.1.9",
+    "csv": "6.2.5",
+    "eslint": "8.29.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jest": "27.1.6",
+    "eslint-plugin-n": "15.6.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-sort-imports-es6-autofix": "0.6.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "husky": "8.0.2",
+    "jest": "29.3.1",
+    "js-yaml": "4.1.0",
+    "lerna": "6.1.0",
+    "lint-staged": "13.1.0",
+    "mongodb-memory-server": "8.10.2",
+    "pre-commit": "1.2.2",
+    "prettier": "2.8.1",
+    "prettier-config-standard": "5.0.0",
+    "run-rs": "0.7.7",
+    "serverless": "3.25.1",
+    "serverless-add-api-key": "4.2.1",
+    "serverless-bundle": "5.5.0",
+    "serverless-offline": "12.0.2",
+    "serverless-offline-aws-eventbridge": "2.0.3",
+    "serverless-plugin-datadog": "5.14.1"
+  },
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "7.19.6",
+    "aws-sdk": "2.1273.0",
+    "axios": "1.2.0",
+    "create-lambda-handler": ">=1.0.0",
+    "crypto": "1.0.1",
+    "crypto-js": "4.1.1",
+    "date-fns": "2.29.3",
+    "db": ">=1.0.0",
+    "mongoose": "6.8.0",
+    "oauth-1.0a": "2.2.6",
+    "openai": "^3.1.0",
+    "utils": ">=1.0.0",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=14.18.0"
+  }
+}

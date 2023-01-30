@@ -1,0 +1,11 @@
+{
+  "name": "send-email",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "serverless-bundle test"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

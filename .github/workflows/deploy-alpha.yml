@@ -1,0 +1,25 @@
+name: Deploy Alpha
+
+on:
+  workflow_dispatch:
+    inputs:
+      new_resources:
+        type: boolean
+        description: 'Should Pulumi create new resources?'
+        default: false
+        required: true
+
+jobs:
+  deploy-alpha:
+    name: 'Deploy Alpha'
+    uses: ./.github/workflows/deploy-env.yml
+    with:
+      deploy_env: alpha
+      aws_account_id: '339551586900'
+      domain_name: ac-service-alpha.denim-social.com
+      event_bus_name: socialite-alpha-social-network
+      new_resources: ${{ github.event.inputs.new_resources == true }}
+      secrets_manager_key: denimsocial-ac-service-alpha
+      aws_region: us-east-1
+      deployment_role_arn: arn:aws:iam::339551586900:role/serverless_deployment
+    secrets: inherit
